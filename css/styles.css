@@ -487,7 +487,7 @@ a {
   min-height: 584px;
   border-radius: 4px;
   transform: translate(-50%, -50%);
-  background-color: #ffffff;
+  background-color: #fcfcfc;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -501,26 +501,24 @@ a {
   right: 24px;
   width: 24px;
   height: 24px;
+  padding: 0;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #e7e9fc;
   fill: #2e2f42;
   stroke-width: 1px;
-  border: 2px solid #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-icon {
   top: 8px;
   right: 8px;
   fill: #2e2f42;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
@@ -550,10 +548,10 @@ a {
 .form-label {
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 .input-container {
   position: relative;
@@ -562,15 +560,18 @@ a {
 }
 .form-input {
   width: 100%;
+  height: 40px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 38px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  outline: none;
+  outline: transparent;
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus {
-  border-color: #404bbf;
+  border-color: #4d5ae5;
   box-shadow: 0 0 4px rgba(64, 75, 191, 0.4);
 }
 .modal-icon {
@@ -589,14 +590,20 @@ textarea.form-input {
   width: 100%;
   height: 120px;
   resize: none;
-  padding: 8px 16px;
-}
-.form-input::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-input::placeholder {
   opacity: 1;
 }
 .form-agreement-wrapper {
