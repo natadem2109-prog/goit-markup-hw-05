@@ -541,7 +541,7 @@ a {
   color: #2e2f42;
 }
 .input-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
 }
@@ -607,9 +607,7 @@ textarea.form-input {
   opacity: 1;
 }
 .form-agreement {
-  display: flex;
-  align-items: center;
-  font-weight: 400;
+  position: absolute;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -662,7 +660,7 @@ textarea.form-input {
   color: #4d5ae5;
 }
 .policy-link:hover {
-  color: #4d5ae5;
+  color: #404bbf;
 }
 .custom-checkbox:checked + .checkbox-text::after {
   display: inline-block;
