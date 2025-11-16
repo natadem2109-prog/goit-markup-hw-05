@@ -541,7 +541,7 @@ a {
   color: #2e2f42;
 }
 .input-wrapper {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
 }
