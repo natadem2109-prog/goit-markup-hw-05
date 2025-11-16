@@ -607,7 +607,8 @@ textarea.form-input {
   opacity: 1;
 }
 .form-agreement {
-  position: absolute;
+  display: inline-flex;
+  align-items: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -616,6 +617,8 @@ textarea.form-input {
 
 .checkbox-wrapper {
   margin-bottom: 24px;
+  display: flex;
+  align-items: center;
 }
 .custom-checkbox {
   width: 16px;
@@ -642,23 +645,17 @@ textarea.form-input {
 }
 #user-privacy:checked + label .custom-checkbox {
   background-color: #404bbf;
-  border: none;
+  border: 1px solid transparent;
   fill: #f4f4fd;
 }
 
 #user-privacy:checked + label .checkbox-icon {
   display: block;
 }
-.checkbox-text {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-}
 .policy-link {
   text-decoration: underline;
   color: #4d5ae5;
+  margin-left: 4px;
 }
 .policy-link:hover {
   color: #404bbf;
