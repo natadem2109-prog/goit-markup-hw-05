@@ -541,7 +541,7 @@ a {
   color: #2e2f42;
 }
 .input-wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   display: flex;
   flex-direction: column;
 }
@@ -609,6 +609,7 @@ textarea.form-input {
 .form-agreement {
   display: flex;
   align-items: center;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -634,6 +635,7 @@ textarea.form-input {
 }
 
 .checkbox-icon {
+  display: none;
   top: 4px;
   right: 4px;
   fill: #f4f4fd;
@@ -641,7 +643,7 @@ textarea.form-input {
 }
 #user-privacy:checked + label .custom-checkbox {
   background-color: #404bbf;
-  border-color: #404bbf;
+  border: none;
   fill: #f4f4fd;
 }
 
